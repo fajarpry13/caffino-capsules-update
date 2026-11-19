@@ -1,0 +1,190 @@
+.capsule {
+  font-family: 'Poppins', sans-serif;
+  // adding poppins font to all elements
+    & *:not(.fa):not(.fas):not(.far):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-brands) {
+    font-family: 'Poppins', sans-serif;
+  }
+  @apply relative;
+  &__container {
+    @apply relative w-full container;
+  }
+  &__section {
+    @apply relative isolate overflow-hidden;
+    &__space {
+      @apply mt-[14rem];
+    }
+  &__occasion {
+    @apply flex flex-col items-center text-center py-12;
+    & > p {
+      @apply text-white text-[24px] xl:text-[36px] font-semibold
+    }
+  }
+  }
+  &__banner {
+    @apply w-full md:h-[70vh] xl:h-[75vh] h-auto overflow-hidden;
+     & > img {
+        @apply w-full h-auto md:h-full md:object-cover;
+     }
+  }
+  &__wrapper {
+    @apply hidden absolute inset-0
+     left-0 w-[320px] xl:w-[420px] 2xl:w-[540px] md:h-[71vh] xl:h-[75vh] bg-[#41290E]/90 rounded-tr-[8rem] lg:flex flex-col justify-center
+              px-6 md:px-12 py-10 overflow-hidden;
+    &__col {
+      @apply flex flex-col gap-4 overflow-hidden;
+      & > h1 {
+        @apply text-white text-[2.5rem] md:text-[3.5rem] font-bold leading-[3.5rem] md:leading-[4.5rem];
+      }
+      & > p {
+        @apply text-white text-base md:text-lg font-normal leading-6 md:leading-7;
+      }
+    }
+  }
+  &__wrapper-mobile {
+    @apply bg-[#41290E] w-full lg:hidden py-8;
+    &__inner {
+      @apply container mx-auto flex flex-col items-start justify-start;
+      & > h1 {
+        @apply text-white text-[22px] md:text-[24px] font-bold uppercase;
+      }
+      & > p {
+        @apply text-white text-[10px] md:text-[16px] font-medium;
+      }
+    }
+  }
+  &__collection {
+    @apply container py-6 mx-auto relative;
+
+      &__text__footer {
+    @apply text-justify pl-[0rem] md:pl-[1rem] pr-[0rem] py-[3rem] sm:py-[5rem]
+       xl:pl-[4rem] xl:pr-[0rem] xl:py-[6rem]
+       2xl:pl-[10rem] 2xl:pr-[10rem] 2xl:py-[12rem]
+       overflow-hidden flex flex-col md:items-start items-center justify-start h-full gap-3 md:gap-6;
+
+    & > h1 {
+      @apply  font-bold leading-[2rem] md:leading-[2.5rem];
+    }
+    & > p {
+      @apply font-normal leading-5 xl:leading-6;
+    }
+      & ol {
+    @apply list-decimal list-outside md:space-y-2;
+    & > li {
+      @apply text-[#41290E] text-[12px] xl:text-[26px] font-medium md:font-semibold leading-loose md:pl-2;
+    }
+  }
+
+  }
+    &__text {
+    @apply pb-6 pt-0  pl-[2rem] pr-[1rem] 
+            md:pb-10 md:pt-10 md:pl-[0rem] xl:pl-[4rem]  
+            xl:pr-[2rem] flex flex-col gap-6;
+
+    & > h1 {
+      @apply  font-bold leading-[2rem] md:leading-[2.5rem];
+    }
+    & > p {
+    @apply text-justify text-[12px] lg:text-[18px] xl:text-[22px] text-[#41290E] font-bold leading-6 md:leading-7;
+  }
+      & ol {
+    @apply list-decimal list-outside space-y-2;
+    & > li {
+      @apply text-[#41290E] text-2xl font-semibold leading-loose pl-2;
+    }
+  }
+
+  }
+  &__btn {
+    @apply mt-auto self-end px-6 py-1.5 rounded-full text-sm
+           text-gray-500 bg-white border-2 border-[#41290E]/90
+           transition-all hover:bg-[#41290E] hover:text-white hover:border-[#41290E];
+  }
+  &__btn__footer {
+    @apply  inline-flex items-center justify-center gap-4 px-3 md:px-8 py-2 md:py-3 rounded-full text-xs md:text-sm
+           text-white bg-[#38220A] border-2 border-[#41290E]
+           transition-all hover:bg-[#41290E] hover:text-white hover:border-[#41290E];
+  }
+  &__strong {
+    @apply flex items-baseline gap-3 text-black;
+    
+    & > img {
+      @apply  w-8 h-8;
+    }
+    & > h1 {
+      @apply font-bold leading-none
+    }
+  }
+}
+&__card {
+  @apply relative grid grid-cols-1 md:grid-cols-2 items-center 
+         rounded-[2rem] shadow-xl bg-gradient-to-br from-gray-300 via-white to-white;
+
+&::after {
+    content: '';
+    @apply absolute -z-10 left-[4%] w-[50%] -bottom-4 h-12 blur-xl rounded-[50%]
+           bg-gradient-to-b from-[#A07C54]/0 to-[#41290E]/50;
+  }
+
+ &__media {
+    @apply relative self-stretch min-h-[45vh] md:min-h-[60vh];
+
+      & > img {
+       @apply absolute z-10 left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2
+           w-[100%] md:w-[100%] xl:w-[90%] max-w-none h-auto pointer-events-none;
+      }
+    } 
+}
+
+&__intensity {
+  @apply relative grid grid-cols-2 w-full border pt-4 rounded-lg border-[#41290E];
+
+  & > p {
+    @apply text-[22px] text-[#41290E] font-bold leading-6 md:leading-7;
+  }
+
+  &__wrap {
+    @apply flex w-full items-center justify-between gap-2 px-4 pb-4 ;
+  }
+
+  &__label {
+    @apply text-sm font-medium uppercase tracking-wide text-[#41290E];
+  }
+
+  &__list {
+    @apply flex items-center gap-1;
+  }
+
+  &__item {
+    @apply flex h-4 w-4 lg:h-7 lg:w-7 xl:h-9 xl:w-9 shrink-0 items-center justify-center rounded-full
+           text-sm text-[#41290E] font-medium transition-all
+           hover:bg-[#41290E]/20;
+
+    &.active {
+      @apply bg-[#41290E] font-semibold text-white hover:bg-[#41290E];
+    }
+  }
+}
+&__easy {
+   @apply relative w-full pt-4 md:pt-8;
+   &__wrap {
+     @apply absolute inset-0 grid grid-cols-1 md:grid-cols-2 items-center  
+   }
+}
+&__text__intensity {
+    @apply text-[12px] lg:text-[18px] xl:text-[22px] text-[#41290E] font-bold;
+}
+&__buy {
+  @apply relative w-full h-auto bg-[#41290E] flex items-center justify-center pt-[4rem] pb-[3rem] xl:pb-[8rem] xl:pt-[7rem];
+
+  &__wrap {
+    @apply flex flex-col items-center justify-center gap-4 md:gap-6;
+  }
+
+  &__btn {
+    @apply inline-flex items-center justify-center px-[4rem] md:px-[8rem] xl:px-[16rem] py-[0.5rem] md:py-[1rem] xl:py-[2rem] rounded-full font-bold
+           text-white bg-[#88633A] border-2 border-[#88633A] text-[14px] md:text-[32px] xl:text-[42px] uppercase
+           transition-all hover:bg-[#88633A]/70 hover:text-white hover:border-[#41290E];
+  }
+}
+
+}

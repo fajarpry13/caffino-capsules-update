@@ -1,0 +1,23 @@
+.container_fluid {
+    @apply container mt-[88px] mb-[152px];
+
+    .container_wrap {
+        @apply mx-1 md:mx-20 lg:mx-[13rem];
+
+        @media screen and (min-width: 1024px) and (max-width: 1119px) {
+            @apply mx-20;
+        }
+    }
+}
+
+.blackheader {
+    @apply w-full bg-black;
+
+    &__wrap {
+        @apply container pt-[17px] pb-[17px];
+    }
+
+    &__title {
+        @apply text-white text-center md:text-left font-bold text-[24px] md:text-[48px];
+    }
+}

@@ -1,0 +1,81 @@
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 30; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    @apply bg-blur;
+
+    &__card {
+        position: absolute;
+        top: 110px;
+        // top: 50%;
+        width: 283px;
+        // height: 617px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @screen md {
+            // top: 217px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 627px;
+            // height: 467px;
+        }
+
+        .modal-close {
+            @apply float-right m-5;
+            
+            & > i {
+                @apply text-[18px];
+            }
+        }
+
+        &__warp {
+            @apply pt-[56px] pb-[30px] px-[20px];
+
+            @screen md {
+                @apply pt-[76px] pb-[56px] px-[64px];
+            }
+        }
+        
+        &__header {
+            @apply text-[24px] font-extrabold;
+
+            & > hr.garis {
+                border: 1px solid #000;
+                @apply my-[15px]
+            }
+        }
+
+        &__body {
+
+            &-grid__fknutrisi {
+                display: grid;
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+                gap: 8px;
+                
+                @screen md {
+                    grid-template-rows: repeat(9, minmax(0, 1fr));
+                    grid-auto-flow: column;
+                }
+            }
+
+            &-items {
+                @apply flex justify-between w-full;
+
+                @screen md {
+                    @apply w-[218px];
+                }
+            }
+
+        }
+    }
+}

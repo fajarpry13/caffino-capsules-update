@@ -1,0 +1,55 @@
+<?php
+
+namespace App\Http\Controllers\Backend\Auth\User;
+
+use Illuminate\Http\Request;
+use App\Domains\Auth\Models\User;
+use App\Domains\Auth\Rules\UnusedPassword;
+use App\Domains\Auth\Services\UserService;
+use Illuminate\Foundation\Http\FormRequest;
+use LangleyFoxall\LaravelNISTPasswordRules\PasswordRules;
+use App\Http\Requests\Backend\User\UpdateUserPasswordRequest;
+use App\Domains\Auth\Http\Requests\Backend\User\EditUserPasswordRequest;
+
+class UserPasswordNewController
+{
+    /**
+     * @var UserService
+     */
+    protected $userService;
+
+    /**
+     * UserPasswordController constructor.
+     *
+     * @param  UserService  $userService
+     */
+    public function __construct(UserService $userService)
+    {
+        $this->userService = $userService;
+    }
+
+    /**
+     * @param  EditUserPasswordRequest  $request
+     * @param  User  $user
+     * @return mixed
+     */
+    public function edit(EditUserPasswordRequest $request, User $user)
+    {
+        return view('backend.auth.user.change-password-new')
+            ->withUser($user);
+    }
+
+    /**
+     * @param  UpdateUserPasswordRequest  $request
+     * @param  User  $user
+     * @return mixed
+     *
+     * @throws \Throwable
+     */
+    public function update(UpdateUserPasswordRequest $request, User $user)
+    {
+        $this->userService->updatePassword($user, $request->validated());
+
+        return redirect()->route('admin.dashboard')->withFlashSuccess(__('Your password was successfully updated.'));
+    }
+}

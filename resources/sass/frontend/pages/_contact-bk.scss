@@ -1,0 +1,48 @@
+.contact {
+    &__form {
+        @apply mb-8 w-full;
+
+        &-label {
+            @apply font-medium;
+        }
+
+        &-input {
+            @apply block 
+                    py-2.5 
+                    px-0 
+                    w-full 
+                    text-sm 
+                    bg-transparent 
+                    border-0 
+                    border-b-2 
+                    appearance-none 
+                    focus:outline-none 
+                    focus:ring-0 
+                    focus:border-blue-600
+        }
+
+        &-button {
+            @apply flex justify-center md:block mt-[100px];
+        }
+    }
+
+    &__agreement {
+        @apply flex items-center mt-10;
+
+        &-checkbox {
+            @apply w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500;
+        }
+
+        &-label {
+            @apply ml-4 text-sm text-black;
+        }
+    }
+
+    &__maps {
+        @apply flex justify-center mt-[140px] mb-[86px];
+    }
+
+    &__address {
+        @apply text-[14px] md:text-[18px];
+    }
+}

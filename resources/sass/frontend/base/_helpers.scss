@@ -1,0 +1,83 @@
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-coffe {
+    background-color: $coffe;
+}
+
+.bg-mocha {
+    background-color: $mocha;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.bg-green2 {
+    background-color: $green2;
+}
+
+.bg-trans {
+    background-color: transparent;
+}
+
+.bg-blur {
+    @apply backdrop-blur-sm bg-black/60;
+}
+
+.bg-caffino {
+    background-color: $caffino;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-coffe {
+    color: $coffe;
+}
+
+.text-mocha {
+    color: $mocha;
+}
+
+.text-red {
+    color: $red;
+}
+
+.fill-yellow {
+    fill: $yellow;
+}
+
+.fill-coffe {
+    fill: $coffe;
+}
+
+.fill-mocha {
+    fill: $mocha;
+}
+
+.fill-green {
+    fill: $green;
+}
+
+.fill-white {
+    fill: $white;
+}
+
+.fill-caffino {
+    fill: $caffino;
+}
+
+.text-coffe {
+    color: $coffe;
+}
+
+[x-cloak] { 
+    display: none !important; 
+}

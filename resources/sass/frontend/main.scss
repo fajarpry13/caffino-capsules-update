@@ -1,0 +1,34 @@
+//Global
+@import '../global';
+
+//Abstaracts
+@import './abstracts/variables', 
+        './abstracts/global';
+
+//Base
+@import './base/helpers',
+        './base/fonts',
+        './base/animation';
+
+// Vendor
+@import './vendor/tailwind', 
+        './vendor/fontawsome',
+        './vendor/aos';
+
+//Layout
+@import './layouts/navigation',
+        './layouts/footer';
+
+// Component
+@import './components/test',
+        './components/modal-fknutrisi',
+        './components/modal-buynow';
+
+// Pages
+@import './pages/global',
+        './pages/home',
+        './pages/product',
+        './pages/articles',
+        './pages/article',
+        './pages/contact',
+        './pages/capsule';

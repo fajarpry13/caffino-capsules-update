@@ -1,0 +1,27 @@
+.footer {
+    @apply bg-[#391B1A] relative;
+
+    &__wrap {
+        @apply container pt-[72px] pb-[116px] text-white;
+
+        @screen md{
+            @apply text-center;
+        } 
+    }
+
+    &__logo {
+        @screen md {
+            @apply flex justify-center;
+        }
+    }
+
+    &__copyr {
+       @apply mt-[20.44px] mb-[29px] text-[12px] font-roboto;
+    }
+
+    &__link {
+        @screen md {
+            @apply text-center;
+        }
+    }
+}

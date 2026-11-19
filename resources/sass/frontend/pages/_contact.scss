@@ -1,0 +1,104 @@
+.line {
+    display: flex;
+    flex-direction: row;
+}
+.line:before,
+.line:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #fff;
+    margin: auto;
+}
+.rhombus {
+    background: #fff;
+    margin: 10px auto;
+    /*   border: 1px solid #000; */
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.contact {
+
+    &__banner{
+        position: relative;
+        // height: 700px;
+        background-image: url('/img/banner/maps-contact.jpg'); 
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        @apply overflow-hidden;
+        
+        @screen 2xl {
+            background-size: 150%;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(to left, #442511 10%, rgba(39, 21, 9, 40%) 140%);
+            content: '1';
+            font-size: 0;
+            z-index: 0;
+        }
+
+        .wrap-asset {
+            @apply hidden md:block;
+            
+            .latte-cup {
+                @apply absolute -right-20 bottom-0;
+
+                & > img {
+                    @apply h-[550px] md:h-[400px] xl:h-[550px];
+                }
+            }
+
+            .bean {
+                @apply absolute -right-28 bottom-10;
+
+                & > img {
+                    @apply h-[650px] md:h-[490px] xl:h-[650px];
+                }
+            }
+        }
+
+        .section__contact {
+            @apply container py-20 md:py-52 md:pl-20 relative;
+
+            &__wrap {
+                @apply md:w-[500px] text-center;
+
+                .contact_us {
+                    @apply font-bold text-[#BB9F64] text-[40px] md:text-[50px] uppercase;
+                }
+
+                .company {
+                    @apply font-bold text-[#BB9F64] text-[30px] md:text-[40px] mt-3;
+                }
+
+                .company-name {
+                    @apply font-bold text-white text-[20px] md:text-[40px];
+                }
+
+                .addrs-1 {
+                    @apply my-5 text-white;
+                }
+
+                .addrs-2 {
+                    @apply text-white;
+                }
+            }
+        }
+    }
+
+    &__ecommerce {
+        @apply -mt-10;
+
+        .ecommerce-text {
+            @apply text-center font-bold text-[50px] text-[#BB9F64];
+        }
+    }
+}

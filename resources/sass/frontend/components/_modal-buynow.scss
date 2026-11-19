@@ -1,0 +1,62 @@
+.modal-buynow {
+    @apply  hidden
+            fixed 
+            z-[30] 
+            left-0 
+            top-0 
+            w-full 
+            h-full 
+            overflow-auto 
+            bg-black 
+            bg-opacity-70 
+            bg-blur;
+    
+
+    &__card {
+        @apply  absolute
+                w-[280px] 
+                bg-white 
+                left-1/2 
+                -translate-x-1/2
+                top-1/2
+                -translate-y-1/2  
+                rounded-lg 
+                shadow-md 
+                shadow-slate-800;
+
+        @screen md {
+            @apply w-[400px]; 
+        }
+
+        &__wrap {
+            @apply pt-[50px] pb-[40px] px-[20px];
+        }
+
+        &__header {
+            @apply mb-5 text-center font-bold;
+
+            @screen md {
+                @apply text-left font-bold;
+            }
+        }
+
+        &__body {
+
+            &-wrap {
+                @apply flex flex-wrap justify-center gap-5;
+
+                .olshop {
+                    .btn_olshop {
+                        & > img {
+                            @apply rounded-lg border border-solid border-black p-2 w-[150px];
+
+                            &:hover {
+                                @apply border-gray-500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
