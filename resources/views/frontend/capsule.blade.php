@@ -322,21 +322,25 @@ Nutty, Plum, Tea.',
     <div class="h-0.5 bg-black mt-1"></div>
 </div>
             <div class="grid grid-cols-2 items-center justify-center pb-4">
-                    <div class="flex items-center justify-center p-3 h-20">
-                        <img src="{{ asset('img/capsule/icon/tokped-caffino.png') }}" alt="">
-                    </div>
-        
-                    <div class="flex items-center justify-center p-3 h-20">
-                        <img src="{{ asset('img/capsule/icon/shopee-caffino.png') }}" alt="">
-                    </div>
-        
-                    <div class="flex items-center justify-center p-3 h-20">
-                        <img src="{{ asset('img/capsule/icon/blibli-caffino.png') }}" alt="">
-                    </div>
-        
-                    <div class="flex items-center justify-center p-3 h-20">
-                        <img src="{{ asset('img/capsule/icon/tiktok-caffino.png') }}" alt="">
-                    </div>
+                    <a href="https://www.google.com/url?q=https://www.tokopedia.com/savoriaofficial/etalase/caffino-capsule&source=gmail&ust=1795172075242000&usg=AOvVaw3n8ANFRh_EcuzUy5W4b_Fw" target="_blank" rel="noopener noreferrer"
+   class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+    <img src="{{ asset('img/capsule/icon/tokped-caffino.png') }}" alt="Caffino di Tokopedia">
+</a>
+
+<a href="https://shopee.co.id/verify/traffic/error?home_url=https%3A%2F%2Fshopee.co.id&is_logged_in=false&next=https%3A%2F%2Fshopee.co.id%2Fshop%2F455592612%3FcategoryId%3D278346381%26shopId%3D455592612%26uls_is_skip_fetch_seo%3Dtrue%26uls_trackid%3D575osorb01ov%26utm_content%3D2nZijM3vaQfNLfpjnyfGQqRHYyyR%23product_list&tracking_id=375c318566-4368-4a78-b664-7061f7ead4ca&type=4" target="_blank" rel="noopener noreferrer"
+   class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+    <img src="{{ asset('img/capsule/icon/shopee-caffino.png') }}" alt="Caffino di Shopee">
+</a>
+
+<a href="https://www.blibli.com/brand/savoria-flagship-store?excludeProductList=false&promoTab=false&bc=Caffino+Capsule+" target="_blank" rel="noopener noreferrer"
+   class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+    <img src="{{ asset('img/capsule/icon/blibli-caffino.png') }}" alt="Caffino di Blibli">
+</a>
+
+<a href="https://www.tiktok.com/alliance/ecom/fe/h5/default/fe_teu_h5_alliance/link-share/index?_d=f4gk1jieaa3ae8&_svg=1&checksum=13044b16d4328ca1abbd78118a0ff6ed91fd1722b594d120e9030a9f28d8297b&crm_scenario=c2hvcF9jb21taXNzaW9uX3NoYXJlXzY4MzI1NTMwMjA4ODgzMTg5Nzg%3D&crm_type=share&scene=shop&sec_user_id=MS4wLjABAAAAqhMvjT17roDHRRnT3xgscr_i8aIVGRBcMn2gc7jVxbz0WHuGPaBSH4BanPNno59P&share_app_id=1180&share_enter_from=shop&share_iid=7707423878096275201&share_link_id=bc8d93ff-b184-4435-89bb-f69cd3d9f662&share_region=ID&social_share_type=4&target_url=snssdk1180%253A%252F%252Fec%252Fstore%253Fchain_key%253D%25257B%252522t%252522%25253A1%25252C%252522k%252522%25253A%252522000000000000000007708962657244055316%252522%25252C%252522sc%252522%25253A%252522AFFILIATE_UTM%252522%25257D%2526crm_scenario%253Dc2hvcF9jb21taXNzaW9uX3NoYXJlXzY4MzI1NTMwMjA4ODgzMTg5Nzg%25253D%2526crm_type%253Dshare%2526sellerId%253D7495118067265604095%2526store_page_version%253D1%2526trackParams%253D%25257B%252522enter_from%252522%25253A%252522linkshare_middlepage%252522%25252C%252522enter_method%252522%25253A%252522share_outside_link%252522%25252C%252522source_previous_page%252522%25253A%252522share_outside%252522%25257D&timestamp=1794882746&ug_btm=b6661%2Cb1478&ugbiz_name=UNKNOWN&user_id=6832553020888318978&utm_campaign=client_share&utm_medium=android&utm_source=copy" target="_blank" rel="noopener noreferrer"
+   class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+    <img src="{{ asset('img/capsule/icon/tiktok-caffino.png') }}" alt="Caffino di TikTok Shop">
+</a>
                 </div>  
           </div>
             </x-popup>
