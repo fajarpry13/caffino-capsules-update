@@ -9,7 +9,7 @@
     @apply relative w-full container;
   }
   &__section {
-    @apply relative isolate overflow-hidden;
+    @apply relative overflow-hidden;
     &__space {
       @apply mt-[14rem];
     }
@@ -76,9 +76,10 @@
 
   }
     &__text {
-    @apply pb-6 pt-0  pl-[2rem] pr-[1rem] 
-            md:pb-10 md:pt-10 md:pl-[0rem] xl:pl-[4rem]  
-            xl:pr-[2rem] flex flex-col gap-6;
+    @apply pb-6 pt-0  pl-[1rem] pr-[1rem] 
+            md:pb-10 md:pt-10 md:pl-[0.50rem] md:pr-[0.50rem] 
+            xl:pl-[4rem] xl:pr-[2rem] flex flex-col gap-6;
+            // add [0-50rem] for padding left and right for mobile view 360px
 
     & > h1 {
       @apply  font-bold leading-[2rem] md:leading-[2.5rem];
@@ -136,14 +137,14 @@
 }
 
 &__intensity {
-  @apply relative grid grid-cols-2 w-full border pt-4 rounded-lg border-[#41290E];
+  @apply relative grid grid-cols-1 w-full border pt-4 rounded-lg border-[#41290E];
 
   & > p {
     @apply text-[22px] text-[#41290E] font-bold leading-6 md:leading-7;
   }
 
   &__wrap {
-    @apply flex w-full items-center justify-between gap-2 px-4 pb-4 ;
+    @apply flex w-full items-center justify-between gap-1 md:gap-2 px-[0.50rem] md:px-4 pb-4 ;
   }
 
   &__label {
@@ -151,11 +152,11 @@
   }
 
   &__list {
-    @apply flex items-center gap-1;
+    @apply flex items-center w-full justify-between flex-wrap;
   }
 
   &__item {
-    @apply flex h-4 w-4 lg:h-7 lg:w-7 xl:h-9 xl:w-9 shrink-0 items-center justify-center rounded-full
+    @apply flex h-5 w-5 lg:h-7 lg:w-7 xl:h-9 xl:w-9 shrink-0 items-center justify-center rounded-full
            text-sm text-[#41290E] font-medium transition-all
            hover:bg-[#41290E]/20;
 

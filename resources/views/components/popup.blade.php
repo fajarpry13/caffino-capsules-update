@@ -10,7 +10,7 @@
         x-on:close-modal.window="if ($event.detail === modalName) { show = false }"
         x-on:keydown.escape.window="show = false"
         x-show="show"
-        class="fixed inset-0 z-50 flex items-center justify-center overflow-auto  backdrop-blur-sm "
+        class="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm "
         style="display: none;">
 
         <div x-transition:enter="transition ease-out duration-300"
