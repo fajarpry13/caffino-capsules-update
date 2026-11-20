@@ -326,24 +326,24 @@ Nutty, Plum, Tea.',
 <h2 class="text-xl font-bold text-left">E-COMMERCE</h2>
 <div class="h-0.5 bg-black mt-1"></div>
 </div>
-     <div class="grid grid-cols-2 items-center justify-center pb-4">
+     <div class="grid grid-cols-2 items-center justify-center pb-4 gap-0 md:gap-8">
              <a href="https://www.tokopedia.com/savoriaofficial/etalase/caffino-capsule" target="_blank" rel="noopener noreferrer"
-class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+class="flex items-center justify-center p-3 md:p-[4.75rem] h-20 transition hover:scale-105">
 <img src="{{ asset('img/capsule/icon/tokped-caffino.png') }}" alt="Caffino di Tokopedia">
 </a>
 
 <a href="https://id.shp.ee/LNfdWbHm" target="_blank" rel="noopener noreferrer"
-class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+class="flex items-center justify-center p-3 md:p-[4.75rem] h-20 transition hover:scale-105">
 <img src="{{ asset('img/capsule/icon/shopee-caffino.png') }}" alt="Caffino di Shopee">
 </a>
 
 <a href="https://www.blibli.com/brand/savoria-flagship-store?excludeProductList=false&promoTab=false&bc=Caffino%20Capsule%20" target="_blank" rel="noopener noreferrer"
-class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+class="flex items-center justify-center p-3 md:p-[4.75rem] h-20 transition hover:scale-105">
 <img src="{{ asset('img/capsule/icon/blibli-caffino.png') }}" alt="Caffino di Blibli">
 </a>
 
 <a href="https://vt.tiktok.com/ZS9f3EPf49A77-rpUt1/" target="_blank" rel="noopener noreferrer"
-class="flex items-center justify-center p-3 h-20 transition hover:scale-105">
+class="flex items-center justify-center p-3 md:p-[4.75rem] h-20 transition hover:scale-105">
 <img src="{{ asset('img/capsule/icon/tiktok-caffino.png') }}" alt="Caffino di TikTok Shop">
 </a>
          </div>  

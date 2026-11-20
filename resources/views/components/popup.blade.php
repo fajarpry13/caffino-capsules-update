@@ -19,7 +19,7 @@
             x-transition:leave="transition ease-in duration-300"
             x-transition:leave-start="opacity-100 transform scale-100"
             x-transition:leave-end="opacity-0 transform scale-90"
-            class=" rounded-lg w-full max-w-md p-6 relative">
+            class=" rounded-lg w-full md:max-w-6xl max-w-md p-6 relative">
             
             
 

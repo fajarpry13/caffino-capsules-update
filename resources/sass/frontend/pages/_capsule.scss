@@ -58,7 +58,7 @@
       &__text__footer {
     @apply text-justify pl-[0rem] md:pl-[1rem] pr-[0rem] py-[3rem] sm:py-[5rem]
        xl:pl-[4rem] xl:pr-[0rem] xl:py-[6rem]
-       2xl:pl-[10rem] 2xl:pr-[10rem] 2xl:py-[12rem]
+       2xl:pl-[4rem] 2xl:pr-[4rem] 2xl:py-[12rem]
        overflow-hidden flex flex-col md:items-start items-center justify-start h-full gap-3 md:gap-6;
 
     & > h1 {
